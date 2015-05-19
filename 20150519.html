@@ -6,17 +6,24 @@
     The Starting Point When You Don't Know How To Design
   </title>
   <style>
-    h1{font-family:sans-serif;color: #675337;}
-    p {color: #675337}
-    blockquote {display:block;margin-top:1em;margin-bottom:1em;margin-left:40px;margin-right:40px; font-size: 18px; font-family:cursive; color: #997C57}
+    h1,h2{font-family:sans-serif;color: #4E677A;}
+    p {color: #675337; margin-bottom: 1em;}
+    blockquote {display:block;margin-top:1em;margin-bottom:1em;margin-left:40px;margin-right:40px; font-size: 18px; font-family:cursive; color: #6E8596;}
     code {display:block:margin-top: 1em;margin-bottom:1em;margin-left:0; margin-right:0; background: #675337; padding: 10px;color:#FFDCAA;}
     body {  background: #FFEBD0; padding: 10px; color:# 675337; }
-    .post {max-width:400px;}
+    .post {max-width:600px;}
     .initial{font-size:400%; line-height:67%; float:left; font-family:serif}
     a {color: #675337}
+    hr {width:50%;border:1px solid #997C57;}
     
 
   </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type ="text/javascript">
+
+  </script>
+
+
   
 </head>
 <body>
@@ -47,18 +54,39 @@
     Incidentally, that's now the file name of this page.
     </p>
 
+    <hr/>
+    <h2>Add Colors</h2>
+
     <p> So now we've created a basic html page. Let's add a bit of color. I looked for a <a href="http://paletton.com/">palette generator </a>and made a simple color scheme.
     </p>
     <blockquote>"I'm feeling like browns today."</blockquote>
     <p>
-    After browsing some monochromatic color combinations, I found a <a href="http://paletton.com/palette.php?uid=10I050kcbnL5SHo9ctgdSjaeScW">nice shade </a> that I liked.
-
+    After browsing some monochromatic color combinations, I found a <a href="http://paletton.com/palette.php?uid=10I050kcbnL5SHo9ctgdSjaeScW">nice shade</a> that I liked.
+    
     </p>
+    <img src="http://api.paletton.com/img?size=25&amp;uid=10I050kcbnL5SHo9ctgdSjaeScW" style="border: 1px solid #675337" alt="A shade of browns">
+    <p>
+    However, something felt amiss.  This color scheme reminded me too much of a medieval book. I needed a spice of color and updated the <a href="http://paletton.com/palette.php?uid=20I050kcbnL5SHo9ctgdSjaeScW">palette</a>. A shade of blue would do nicely.  This color adds flavor.
+    </p>
+    <img src="http://api.paletton.com/img?size=25&amp;uid=20I050kcbnL5SHo9ctgdSjaeScW" alt = "Shades of brown with a spice of blue" style="border:1px solid #675337">
+    <p>Let's make the h1,h2 elements of this page 'spicy'.</p>
 
-    <div class = "expression">
-    </div>
+    <h2>Add Movement</h2>
+
+    <blockquote>"Ahh. This coffee is good."</blockquote>
+    <p>The caffeine hits me while I work. I now need some movement. I slap on the generic jquery tag on top of the html. I used a content delivery network (CDN) from Google as the source.</p>
+    <br />
+    <code>
+      http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js
+    </code>
+
+    <p>Let's play with a little javascript to make this page more organized.  The text is getting too long for me.</p>
+
+    
 
   </div>
 </body>
+
+
 
 </html>

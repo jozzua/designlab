@@ -48,7 +48,7 @@
       <script src="js/typed.min.js"></script>
       <script type ="text/javascript">
         $(document).ready(function(){
-            $('span#makefile').typed({strings: ['touch $(date "%Y%m%d").html'],  startDelay: 2000, loop:true, backDelay:10000
+            $('span#makefile').typed({strings: ['touch $(date +"%Y%m%d").html'],  startDelay: 2000, loop:true, backDelay:10000
               });
             $('span#addjquery').hover(function() {$(this).typed({strings: ['http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'], loop:true, backDelay: 5000});
               });
@@ -84,7 +84,7 @@
     </p>
 
 
-    <code>%> <span id="makefile"> touch $(date "%Y%m%d").html</span></code>
+    <code>%> <span id="makefile"> touch $(date +"%Y%m%d").html</span></code>
     <p>
     Incidentally, that's now the file name of this page.
     </p>

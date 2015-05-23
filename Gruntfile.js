@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    pkg:grunt.file.readJSON('package.json')
+    pkg:grunt.file.readJSON('package.json'),
     watch :{
       assemble: {
                   files: [ 'app/content/blog/*.hbs', 
@@ -10,8 +10,8 @@ module.exports = function(grunt) {
                            ],
                   tasks:['assemble']
                 },
-       livereload {
-        options {
+       livereload :{
+        options: {
           livereload:'<%= connect.options.livereload %>'
         },
         files: [
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       options: {
         layoutdir: 'app/layouts',
         flatten: true,
-        layout: 'default.hbs'
+        layout: 'default.hbs',
         partials: 'app/partials/*.hbs'
       },
       page: {
@@ -32,9 +32,9 @@ module.exports = function(grunt) {
           'dist/': ['app/content/page/*.hbs']
         }
       },
-      blog {
+      blog: {
         files: {
-          'dist/': ['app/content/blog/*.hbs'];
+          'dist/': ['app/content/blog/*.hbs']
         }
       }
     },
@@ -59,7 +59,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
   grunt.registerTask('default', ['connect:livereload','assemble','watch'])
 
 }

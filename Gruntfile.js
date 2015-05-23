@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       },
       page: {
         files: {
-          'dist/': ['app/content/page/*.hbs']
+          'dist/': ['app/content/pages/*.hbs']
         }
       },
       blog: {

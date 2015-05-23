@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     pkg:grunt.file.readJSON('package.json'),
     watch :{
       assemble: {
-                  files: [ 'app/content/blog/*.hbs', 
+                  files: [ 'app/content/blog/*.hbs',
                            'app/content/pages/*.hbs',
                            'app/layout/default/*.hbs',
                            'app/partials/*.hbs'
@@ -51,6 +51,17 @@ module.exports = function(grunt) {
           base: './dist'
         }
       }
+    },
+
+    imagemin: {
+    dynamic: {
+        files: [{
+            expand: true,
+            cwd: 'images/',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'images/build/'
+        }]
+    }
     }
 
 
@@ -59,6 +70,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default', ['connect:livereload','assemble','watch'])
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.registerTask('default', ['connect:livereload','assemble','watch','imagemin'])
 
 }

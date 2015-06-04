@@ -1,5 +1,4 @@
-Ramblings on Code and Design
-=================================
+# Ramblings on Code and Design
 
 This is a collection of design and user interface related experiments.
 

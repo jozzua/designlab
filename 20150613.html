@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time For Grids</title>
+  <style type="text/css">
+    [class*='col-']{
+      float:left;
+      background: #ccc;
+      padding-right: 20px;
+    }
+    [class*='col-']:last-of-type {
+      padding-right:0;
+    }
+    .col-2-3 {
+      width: 66.66%;
+    }
+    .col-1-3 {
+      width: 33.33%;
+    }
+    .grid:after{
+      content:"";
+      display:table;
+      clear:both;
+    }
+
+    *, *:after, *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .grid-pad {
+      padding: 20px 0 20px 20px;
+    }
+    .grid-pad > [class*='col-']:last-of-type {
+      padding-right: 20px;
+    }
+    h1,p {
+    padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class=  "grid grid-pad">
+    <div class="col-2-3">
+      <h1>Time For Grids</h1>
+      <p>It's time for us to play with Grids! In this particular html I'll be looking at some basic grid CSS and apply in for this site.</p>
+    </div>
+    <div class="col-1-3">
+      <p>
+        This will be the left sidebar for this particular grid set up.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+

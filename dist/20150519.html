@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HUD Design Lab</title>
+  </head>
+
+  <body>
+    <nav role="navigation">
+    <!-- navigation stuff -->
+    </nav>
+
+    <main role="main">
+
+    <!DOCTYPE HTML5>
+<html>
+
+  <head>
+    <title>
+      The Starting Point When You Don't Know How To Design
+    </title>
+    <style>
+      h1,h2{font-family:sans-serif; color: #675337;}
+      .spiced{color: #4E677A;}
+      p {color: #675337; margin-bottom: 1em;}
+      blockquote {display:block;margin-top:1em;margin-bottom:1em;margin-left:40px;margin-right:40px; font-size: 18px; font-family:cursive; color: #6E8596;}
+      code {display:block:margin-top: 1em;margin-bottom:1em;margin-left:0; margin-right:0; background: #675337; padding: 10px;color:#FFDCAA;}
+      body {  background: #eee; padding: 10px; color:# 675339; line-height: 1.5em; }
+      .post {max-width:600px;}
+      .initial{font-size:400%; line-height:67%; float:left; font-family:serif}
+      a {color: #675337}
+      hr {width:50%;border:1px solid #997C57;}
+      .date {font-size:small; color: #675337}
+      .typed-cursor{
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+      }
+      @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+      }
+      @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+      }
+      @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+      }
+      button { padding: 10px}
+
+
+    </style>
+
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="js/typed.min.js"></script>
+      <script type ="text/javascript">
+        $(document).ready(function(){
+            $('span#makefile').typed({strings: ['touch $(date +"%Y%m%d").html'],  startDelay: 2000, loop:true, backDelay:10000
+              });
+            $('span#addjquery').hover(function() {$(this).typed({strings: ['http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'], loop:true, backDelay: 5000});
+              });
+            $('span#addtyped').hover(function() {$(this).typed({strings: ['js/typed.min.js'], loop:true, backDelay: 5000});
+              });
+            });
+</script>
+
+
+
+</head>
+<body>
+
+  <div class="post">
+
+    <h1>Let's Design Something</h1>
+    <div class="date">May 19, 2015</div>
+
+
+    <blockquote> "You don't know how to code.  Or Design."</blockquote>
+
+    <div class="initial">
+      T</div>
+    <p>
+    hat's what I tell myself everyday.  I don't claim to be a designer or a developer. 
+
+    Yet I'm embedded into this tech culture.  My peers are web designers, developers and marketers.
+
+    Who am I?  Just  a guy who wants to learn.  I want to experiment.
+
+
+    Here's what I learned today.  I learned how to make a terminal command that makes a file with today's date.
+    </p>
+
+
+    <code>%> <span id="makefile"> touch $(date +"%Y%m%d").html</span></code>
+    <p>
+    Incidentally, that's now the file name of this page.
+    </p>
+
+    <hr/>
+    <h2>Add Colors</h2>
+
+    <p> So now we've created a basic html page. Let's add a bit of color. I looked for a <a href="http://paletton.com/">palette generator </a>and made a simple color scheme.
+    </p>
+    <blockquote>"I'm feeling like browns today."</blockquote>
+    <p>
+    After browsing some monochromatic color combinations, I found a <a href="http://paletton.com/palette.php?uid=10I050kcbnL5SHo9ctgdSjaeScW">nice shade</a> that I liked.
+    
+    </p>
+    <img src="http://api.paletton.com/img?size=25&amp;uid=10I050kcbnL5SHo9ctgdSjaeScW" style="border: 1px solid #675337" alt="A shade of browns">
+    <p>
+    However, something felt amiss.  This color scheme reminded me too much of a medieval book. I needed a spice of color and updated the <a href="http://paletton.com/palette.php?uid=20I050kcbnL5SHo9ctgdSjaeScW">palette</a>. A shade of blue would do nicely.  This color adds flavor.
+    </p>
+    <img src="http://api.paletton.com/img?size=25&amp;uid=20I050kcbnL5SHo9ctgdSjaeScW" alt = "Shades of brown with a spice of blue" style="border:1px solid #675337">
+    <p>As you can see, I've made the and blockquote elements of this page <span id="spice"> 'spicy'</span>.</p>
+
+    <h2>Add Movement</h2>
+
+    <blockquote>"Ahh. This coffee is good."</blockquote>
+    <p>The caffeine hits me while I work. I now need some movement. I slap on the generic jquery tag on top of the html. I used a content delivery network (CDN) from Google as the source. I also found a nice plugin that animates typing text on the screen.  You might have seen it already when I showed the terminal code to make a file using the date as parameters. :)</p>
+    <p>
+    <code><span id="addjquery">
+      http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js
+      </span>
+    </code>
+    </p>
+    <p>
+    <code><span id="addtyped">
+      script src="js/typed.min.js"
+      </span>
+    </code>
+    </p>
+    <h2>More Practice</h2>
+    <blockquote>
+      "Whew, that took longer than expected."
+    </blockquote>
+
+    <p>Yes I knew HTML, Javascript and CSS.  Yet this entire exercise took me at least for hours.</p>
+    <p>Gotta get better.</p>
+    
+
+  </div>
+</body>
+
+
+
+</html>
+
+
+    </main>
+
+    <footer role="contentinfo">
+    <!-- footer stuff -->
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HUD Design Lab</title>
+  </head>
+
+  <body>
+    <nav role="navigation">
+    <!-- navigation stuff -->
+    </nav>
+
+    <main role="main">
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I'm starting to love how to code</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $('#myTab a').click(function (e) {
+        if($(this).parent('li').hasClass('active')){
+        $( $(this).attr('href') ).hide();
+        }
+        else {
+        e.preventDefault();
+        $(this).tab('show');
+        }
+        });
+      </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>I'm starting to love how to code</h1>
+    <ul id="myTab" class="nav nav-tabs">
+      <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+      <li><a href="#profile" data-toggle="tab">Profile</a></li>
+
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade in active" id="home">
+        <p>I've been tyring to figure out what's the best way to create simple tabs.  For now I'm cheating and using a bootstrap template and it's JS tools.  This effort is overkill and introduces a lot of bloat. I hope to remedy this in my subsquent practices sessions.</p>
+              </div>
+      <div class="tab-pane fade" id="profile">
+        <p>This would be where my Profile would be :)</p>
+      </div>
+    </div>
+
+  </div>
+  </body>
+</html>
+
+
+    </main>
+
+    <footer role="contentinfo">
+    <!-- footer stuff -->
+    </footer>
+
+  </body>
+</html>

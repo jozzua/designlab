@@ -10,7 +10,7 @@
   <h1>A collection of experiments</h1>
   <p>Merely a collections of coding and design experiments.</p>
   <ul>
-    <li ng-repeat='page in pages | orderBy:page:reverse '> 
+    <li ng-repeat='page in pages'> 
       <a href="app/{{page}}">{{page}}</a>
     </li>
   </ul>
@@ -25,11 +25,8 @@
     PageApp.controller('PageCtrl', function($scope, $http){
         $http.get('dist/urls.json').success( function(data) {
           $scope.pages = data;
+          console.log(data);
           });
         });
-  console.log(data);
-
-
-
-</script>
+      </script>
 </html>

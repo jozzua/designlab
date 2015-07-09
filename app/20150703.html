@@ -3,8 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>More ReactJs Practice</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>More ReactJs Practice</h1>
+
+<body  class='container'>
+
+  <div id="basic"></div>
+  
+  <div id="main"></div>
+  
+  <script src="https://fb.me/react-0.13.3.js" type="text/javascript"></script>
+
+  <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+
+
+  <script type="text/jsx">
+    React.render(
+    <div>
+      <h1>More ReactJs Practice</h1>
+      <p>Have some fun?
+     </p>
+     <p>Not, really.  I missed one bloody letter in  getElementById.i used getElementbyId.  See the freaking difference? </p>
+     <p>No? I know right?!</p>
+    </div>,
+  document.getElementById('main')
+    );
+
+  </script>
+
 </body>
 </html>

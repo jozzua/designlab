@@ -9,4 +9,4 @@ It's a collection of daily ramblings on design. What usually happens here:
 
 Each article becomes unique. It's made ground-up in HTML.  What ever happens, happens. If I find like testing something in code - a javascript, an image, a pattern or whatever imagery I see, I'll include.
 
-Needless to say - It's all chaotic.
+Needless to say - It's all chaotic.  Too chaotic sometimes.
